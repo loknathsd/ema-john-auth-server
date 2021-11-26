@@ -24,6 +24,7 @@ client.connect(err => {
       const product = req.body;
       console.log(product)
       products.insertOne(product)
+      console.log(products)
       .then(result =>{
         console.log(result)
       })
